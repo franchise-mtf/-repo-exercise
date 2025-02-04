@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agence Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Agence Web</a>
+        <div class="container">
+          <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Accueil Section -->
+    <section id="accueil" class="section accueil">
+      <div class="container animate__animated animate__fadeIn">
+        <h1>Bienvenue chez Agence Web</h1>
+        <p>
+          Nous créons des sites web modernes et performants pour booster votre
+          activité.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <div class="service-items">
+          <div class="service-item animate__animated animate__zoomIn">
+            <h3>Développement Web</h3>
+            <p>Des solutions web sur mesure adaptées à vos besoins.</p>
+          </div>
+          <div class="service-item animate__animated animate__zoomIn">
+            <h3>Design UX/UI</h3>
+            <p>
+              Des interfaces intuitives pour une meilleure expérience
+              utilisateur.
+            </p>
+          </div>
+          <div class="service-item animate__animated animate__zoomIn">
+            <h3>SEO & Marketing</h3>
+            <p>
+              Améliorez votre visibilité en ligne et attirez plus de clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Notre Portfolio</h2>
+        <div class="portfolio-items">
+          <div class="portfolio-item animate__animated animate__fadeInUp">
+            <img src="images/projet1.jpg" alt="Project 1" />
+            <p>Projet 1</p>
+          </div>
+          <div class="portfolio-item animate__animated animate__fadeInUp">
+            <img src="images/projet2.jpg" alt="Project 2" />
+            <p>Projet 2</p>
+          </div>
+          <div class="portfolio-item animate__animated animate__fadeInUp">
+            <img src="images/projet3.jpg" alt="Project 3" />
+            <p>Projet 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contactez-nous</h2>
+        <form class="contact-form animate__animated animate__fadeIn">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="map" class="map"></div>
+      </div>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
